@@ -6,12 +6,12 @@ The owner-created private plugin is maintained separately in ChatGPT under the n
 
 Use the plugin's two independent Skills:
 
-- \`medical-lead-development\` for researching, verifying, qualifying, scoring, and preparing outreach to overseas medical-device prospects.
-- \`client-progress-summary\` for converting actual customer communications into concise Chinese CRM progress notes.
+- `medical-lead-development` for researching, verifying, qualifying, scoring, and preparing outreach to overseas medical-device prospects.
+- `client-progress-summary` for converting actual customer communications into concise Chinese CRM progress notes.
 
 ## Manual Skills-compatible environments
 
-Import each Skill directory under \`skills/\` according to the host environment's official Skills installation instructions. Keep the accompanying \`references/\` and \`examples/\` directories alongside the corresponding \`SKILL.md\`; the main Skill file relies on these supporting references.
+Import each Skill directory under `skills/` according to the host environment's official Skills installation instructions. Keep the accompanying `references/` and `examples/` directories alongside the corresponding `SKILL.md`; the main Skill file relies on these supporting references.
 
 ## Privacy
 

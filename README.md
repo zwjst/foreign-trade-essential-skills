@@ -4,8 +4,8 @@ A combined source repository for two independent Skills supporting overseas medi
 
 ## Included Skills
 
-1. **Medical Lead Development** (\`skills/medical-lead-development/\`) — evidence-led public-source prospect research, identity and professional contact verification, clinical and institutional qualification, procurement research, Perlove product matching, lead scoring, and staged WhatsApp/email outreach.
-2. **Client Progress Summary** (\`skills/client-progress-summary/\`) — accurate, concise Chinese CRM progress summaries from actual WhatsApp, email, meeting, and other customer communications.
+1. **Medical Lead Development** (`skills/medical-lead-development/`) — evidence-led public-source prospect research, identity and professional contact verification, clinical and institutional qualification, procurement research, Perlove product matching, lead scoring, and staged WhatsApp/email outreach.
+2. **Client Progress Summary** (`skills/client-progress-summary/`) — accurate, concise Chinese CRM progress summaries from actual WhatsApp, email, meeting, and other customer communications.
 
 ## Operating defaults
 
@@ -18,11 +18,11 @@ A combined source repository for two independent Skills supporting overseas medi
 
 ## Repository structure
 
-- \`skills/medical-lead-development/\`: prospect research and staged outreach.
-- \`skills/client-progress-summary/\`: Chinese CRM progress summaries.
-- \`schemas/\`: lead, contact, and communication data structures.
-- \`tests/\`: acceptance criteria and lightweight validation.
-- \`docs/\`: installation and distribution notes.
+- `skills/medical-lead-development/`: prospect research and staged outreach.
+- `skills/client-progress-summary/`: Chinese CRM progress summaries.
+- `schemas/`: lead, contact, and communication data structures.
+- `tests/`: acceptance criteria and lightweight validation.
+- `docs/`: installation and distribution notes.
 
 ## Private ChatGPT plugin
 
@@ -32,9 +32,9 @@ The owner-created ChatGPT plugin is named **foreign-trade-essential-skills**. It
 
 Run:
 
-\`\`\`bash
+```bash
 python tests/validate_skills.py
-\`\`\`
+```
 
 The validation checks JSON files, Skill frontmatter, required Skill metadata, and local Markdown links.
 
