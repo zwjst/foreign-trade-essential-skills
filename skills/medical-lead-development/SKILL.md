@@ -27,8 +27,9 @@ The user selected these operating defaults:
 
 ## 2. Core principles
 
-1. **Evidence before inference.** Separate verified facts, reasonable hypotheses, and unanswered questions.
-2. **Identity before promotion.** When the person and channel are not already verified, the first message should politely confirm the intended doctor/contact, not launch into a product pitch.
+1. **Contact discovery before secondary analysis.** Treat the supplied lead as a search seed. Do not spend a separate preliminary stage re-validating, auditing, or proving the original row/source; immediately search for the prospect's best available professional contact details.
+2. **Evidence before inference.** Separate sourced contact facts, reasonable hypotheses, and unanswered questions. Validate newly discovered contact ownership only to the extent needed to avoid misdirected outreach.
+3. **Identity before promotion.** When the person and channel are not already verified, the first message should politely confirm the intended doctor/contact, not launch into a product pitch.
 4. **Exhaustive means broad and systematic, not intrusive.** Search relevant public sources in local languages and English. Do not bypass logins, paywalls, CAPTCHAs, access controls, robots restrictions, or platform terms; do not obtain leaked, private, or non-public personal data.
 5. **No invented contact details.** Never generate likely email addresses or phone numbers and present them as real. Guessed patterns may be listed only in a separate “unverified hypothesis” section if the user explicitly asks, never as usable contacts.
 6. **Contact source, ownership, and reachability are separate.** A number published on a clinic page is not automatically the doctor's personal WhatsApp. A public email is not necessarily monitored. A WhatsApp icon or mobile format alone does not prove WhatsApp registration or personal use.
