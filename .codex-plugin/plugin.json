@@ -1,0 +1,24 @@
+{
+  "interface": {
+    "capabilities": [],
+    "category": "Productivity",
+    "defaultPrompt": [
+      "请对以下海外医疗设备潜在客户开展全面公开信息调查，先核实身份与联系方式，再分析临床需求、机构采购情况和产品匹配度。采用分阶段人工审核，不要自动联系客户。",
+      "请将以下医疗客户 WhatsApp 或邮件沟通记录整理为一段准确、简洁的中文 CRM 进度摘要。",
+      "请检查现有医疗客户开发档案，核对证据、联系方式归属、需求判断、评分和下一步行动。"
+    ],
+    "developerName": "Jef",
+    "displayName": "外贸医疗客户开发工具",
+    "longDescription": "整合两个独立 Skill：对海外医疗设备潜在客户开展全面、可追溯的公开信息调查，核实医生身份、专业联系方式、机构与采购情况，评估产品匹配度并准备分阶段外联；同时将真实客户沟通记录整理为准确、简洁的中文 CRM 进度摘要。默认采用人工审核流程，不会自动发送消息或联系客户。",
+    "shortDescription": "医疗客户开发与 CRM 总结"
+  },
+  "name": "foreign-trade-essential-skills",
+  "version": "1.0.0",
+  "description": "Medical-device overseas lead development and accurate CRM progress summary Skills.",
+  "author": {"name": "Jef"},
+  "keywords": ["medical-device-sales","lead-research","contact-verification","crm","overseas-sales","medical-equipment"],
+  "homepage": "https://github.com/zwjst/foreign-trade-essential-skills",
+  "repository": "https://github.com/zwjst/foreign-trade-essential-skills",
+  "license": "MIT",
+  "skills": "./skills"
+}

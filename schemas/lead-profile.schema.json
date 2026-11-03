@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/lead-profile.schema.json",
+  "title": "Medical Lead Profile",
+  "type": "object",
+  "required": ["lead_id", "identity", "research_status"],
+  "properties": {
+    "lead_id": {"type": "string"},
+    "raw_input": {"type": "string"},
+    "identity": {
+      "type": "object",
+      "required": ["identity_confidence"],
+      "properties": {
+        "full_name_original": {"type": ["string", "null"]},
+        "name_variants": {"type": "array", "items": {"type": "string"}},
+        "country": {"type": ["string", "null"]},
+        "region": {"type": ["string", "null"]},
+        "city": {"type": ["string", "null"]},
+        "specialty": {"type": ["string", "null"]},
+        "subspecialty": {"type": ["string", "null"]},
+        "current_institution": {"type": ["string", "null"]},
+        "historical_institutions": {"type": "array", "items": {"type": "string"}},
+        "identity_confidence": {"enum": ["confirmed", "high_confidence", "tentative", "conflicting", "unresolved"]},
+        "evidence_refs": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "contacts": {"type": "array", "items": {"$ref": "contact.schema.json"}},
+    "clinical_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claim": {"type": "string"},
+          "evidence_type": {"enum": ["publicly_documented", "self_reported", "institution_published", "specialty_inference", "unknown"]},
+          "source_url": {"type": ["string", "null"], "format": "uri"},
+          "notes": {"type": "string"}
+        },
+        "required": ["claim", "evidence_type"]
+      }
+    },
+    "institutions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"},
+          "type": {"type": ["string", "null"]},
+          "location": {"type": ["string", "null"]},
+          "current_equipment_evidence": {"type": "array", "items": {"type": "string"}},
+          "procurement_evidence": {"type": "array", "items": {"type": "string"}},
+          "decision_roles": {"type": "array", "items": {"type": "string"}}
+        },
+        "required": ["name"]
+      }
+    },
+    "product_fit": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "product_family": {"type": "string"},
+          "fit_status": {"enum": ["supported", "conditional", "not_recommended", "unknown"]},
+          "rationale": {"type": "string"},
+          "validation_question": {"type": "string"}
+        },
+        "required": ["product_family", "fit_status"]
+      }
+    },
+    "score": {
+      "type": "object",
+      "properties": {
+        "total": {"type": "integer", "minimum": 0, "maximum": 100},
+        "grade": {"enum": ["A", "B", "C", "D"]},
+        "evidence_confidence": {"enum": ["high", "medium", "low"]},
+        "dimension_scores": {"type": "object"}
+      }
+    },
+    "research_status": {"enum": ["new", "in_progress", "identity_unresolved", "contact_research", "clinical_research", "qualified", "outreach_prepared", "active", "nurture", "paused", "do_not_contact"]},
+    "research_date": {"type": ["string", "null"], "format": "date"},
+    "next_action": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/contact.schema.json",
+  "title": "Professional Contact Record",
+  "type": "object",
+  "required": ["value", "channel", "owner_type", "ownership_confidence", "reachability"],
+  "properties": {
+    "value": {"type": "string", "minLength": 1},
+    "normalized_value": {"type": ["string", "null"]},
+    "channel": {"enum": ["whatsapp", "mobile", "landline", "email", "social_profile", "contact_form", "other"]},
+    "owner_type": {"enum": ["doctor", "clinic", "institution", "department", "assistant", "third_party", "unknown"]},
+    "owner_name": {"type": ["string", "null"]},
+    "source_url": {"type": ["string", "null"], "format": "uri"},
+    "source_type": {"type": ["string", "null"]},
+    "published_at": {"type": ["string", "null"]},
+    "researched_at": {"type": ["string", "null"], "format": "date"},
+    "ownership_confidence": {"enum": ["confirmed", "likely", "tentative", "conflicting", "unknown"]},
+    "reachability": {"enum": ["not_tested", "message_delivered", "auto_reply", "human_reply", "invalid", "opted_out"]},
+    "whatsapp_explicitly_indicated": {"type": ["boolean", "null"]},
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": false
+}

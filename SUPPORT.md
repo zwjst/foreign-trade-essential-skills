@@ -1,9 +1,5 @@
-# Support / 支持
+# Support
 
-For usage questions, installation issues, bug reports and improvement proposals, open a GitHub issue:
+For issues with the Skill rules, open a GitHub Issue with an anonymized example and the expected result.
 
-https://github.com/zwjst/medical-client-briefs/issues
-
-Before posting, remove customer names, phone numbers, email addresses, patient details, private commercial information and unredacted message logs.
-
-中文：请通过 GitHub Issues 反馈使用问题。提交之前请删除客户个人信息、患者资料、商业机密和原始私人聊天记录。
+Do not attach real patient data, private phone numbers, personal email addresses, raw WhatsApp exports, or confidential commercial information. Redact or replace identifiers before submitting.

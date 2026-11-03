@@ -1,35 +1,26 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "medical-client-briefs",
-  "version": "0.1.1",
-  "description": "Convert overseas medical-equipment client conversations into precise, concise Chinese CRM progress summaries.",
-  "author": {
-    "name": "Community contributors"
-  },
+  "name": "foreign-trade-essential-skills",
+  "version": "1.0.0",
+  "description": "A private medical-device export sales plugin combining exhaustive overseas lead research, contact verification, clinical and institutional qualification, product matching, outreach preparation, and accurate Chinese CRM progress summaries.",
+  "author": {"name": "Jef"},
+  "homepage": "https://github.com/zwjst/foreign-trade-essential-skills",
+  "repository": "https://github.com/zwjst/foreign-trade-essential-skills",
+  "license": "MIT",
+  "keywords": ["medical-device-sales","lead-research","contact-verification","crm","overseas-sales","medical-equipment"],
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "医疗客户开发总结",
-        "shortDescription": "医疗客户沟通进度标准化总结",
-        "longDescription": "将 WhatsApp、邮件及医疗客户开发记录整理为精简、可复制的中文 CRM 单段落摘要，保留客户反馈、需求判断及真实跟进状态，隐藏医生姓名与具体执业机构名称。",
-        "developerName": "Community contributors",
+        "displayName": "外贸医疗客户开发工具",
+        "shortDescription": "医疗客户开发与 CRM 总结",
+        "longDescription": "整合两个独立 Skill：海外医疗设备潜在客户公开信息调查、身份与专业联系方式核验、临床及机构采购分析、产品匹配和分阶段外联准备，以及真实客户沟通记录的中文 CRM 摘要。默认采用人工审核，不会自动联系客户。",
+        "developerName": "Jef",
         "category": "Productivity",
         "capabilities": [],
-        "defaultPrompt": "请按统一模板总结以下医疗客户沟通记录，输出简洁单段落。",
-        "websiteURL": "https://github.com/zwjst/medical-client-briefs",
-        "supportURL": "https://github.com/zwjst/medical-client-briefs/blob/main/SUPPORT.md"
-      },
-      "review": {
-        "prompts": [
-          "请将以下海外医生 WhatsApp 对话整理成单段落 CRM 开发总结。",
-          "对方表示自己手术中不用 C 臂，但未说明医院设备配置。请按统一模板总结，不要推断医院没有相关设备。",
-          "我已经向医院工作人员询问生物医学工程部门联系方式，尚未回复。请记录实际进度。",
-          "我尚未向对方询问采购计划，请在摘要中正确体现下一步。",
-          "请总结以下哥伦比亚医生开发记录，正文不要出现医生和医院名称。"
+        "defaultPrompt": [
+          "请对以下海外医疗设备潜在客户开展全面公开信息调查，先核实身份与联系方式，再分析临床需求、机构采购情况和产品匹配度。采用分阶段人工审核，不要自动联系客户。",
+          "请将以下医疗客户 WhatsApp 或邮件沟通记录整理为一段准确、简洁的中文 CRM 进度摘要。"
         ]
-      },
-      "publication": {
-        "release_notes": "0.1.1 — Added public installation and support instructions, anonymized examples and public submission preparation."
       }
     }
   }

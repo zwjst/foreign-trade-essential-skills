@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/communication.schema.json",
+  "title": "Communication Event",
+  "type": "object",
+  "required": ["timestamp", "channel", "direction", "event_type", "status"],
+  "properties": {
+    "timestamp": {"type": "string", "format": "date-time"},
+    "timezone": {"type": ["string", "null"]},
+    "channel": {"enum": ["whatsapp", "email", "phone", "meeting", "social", "other"]},
+    "direction": {"enum": ["outbound", "inbound", "internal"]},
+    "recipient_type": {"type": ["string", "null"]},
+    "event_type": {"enum": ["drafted", "sent", "received", "auto_reply", "human_reply", "call_completed", "meeting_completed", "referral_requested", "referral_confirmed", "opt_out", "other"]},
+    "status": {"enum": ["planned", "completed", "pending", "failed", "cancelled"]},
+    "summary": {"type": "string"},
+    "source_ref": {"type": ["string", "null"]},
+    "next_action": {"type": ["string", "null"]},
+    "do_not_contact": {"type": "boolean", "default": false}
+  },
+  "additionalProperties": false
+}
