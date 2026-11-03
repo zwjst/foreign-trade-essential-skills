@@ -8,6 +8,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED_SKILLS = {
     "medical-lead-development",
+    "medical-prospect-development",
     "client-progress-summary",
 }
 errors = []
