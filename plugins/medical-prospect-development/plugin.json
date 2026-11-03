@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "medical-prospect-development",
+  "version": "1.0.0",
+  "description": "A structured overseas medical-device prospecting skill covering public-source contact discovery, physician and institution research, clinical product fit, lead scoring, and localized outreach.",
+  "author": { "name": "Jef" },
+  "keywords": ["medical devices", "export sales", "physician prospecting", "hospital research", "WhatsApp outreach", "lead qualification"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "医疗器械客户开发",
+        "shortDescription": "医疗器械海外客户开发",
+        "longDescription": "面向医疗器械出口销售的完整客户开发流程。以医生、医院、诊所和经销商线索为起点，优先检索真实联系方式，再核验职业身份、执业机构、临床业务、设备配置、采购链条和商业价值，生成可直接调整的多语言 WhatsApp 与邮件话术，并按固定九部分结构输出开发报告。第 2 部分开发话术必须紧跟第 1 部分联系方式。",
+        "developerName": "Jef",
+        "category": "Productivity",
+        "capabilities": [],
+        "defaultPrompt": [
+          "按照医疗器械客户开发 Skill，完整开发我提供的医生或机构线索，并按固定九部分报告格式输出。",
+          "优先检索并核验客户姓名、个人电话、WhatsApp、邮箱及其来源，然后分析执业机构、临床业务、设备需求和采购关系。",
+          "根据已有沟通记录继续开发客户，不重复已经发送的内容，并提供西班牙语或英语话术及中文翻译。"
+        ]
+      }
+    }
+  }
+}
