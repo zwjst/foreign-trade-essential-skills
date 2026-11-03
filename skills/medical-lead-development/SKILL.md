@@ -29,14 +29,14 @@ The user selected these operating defaults:
 
 1. **Evidence before inference.** Separate verified facts, reasonable hypotheses, and unanswered questions.
 2. **Identity before promotion.** When the person and channel are not already verified, the first message should politely confirm the intended doctor/contact, not launch into a product pitch.
-3. **Exhaustive means broad and systematic, not intrusive.** Search relevant public sources in local languages and English. Do not bypass logins, paywalls, CAPTCHAs, access controls, robots restrictions, or platform terms; do not obtain leaked, private, or non-public personal data.
-4. **No invented contact details.** Never generate likely email addresses or phone numbers and present them as real. Guessed patterns may be listed only in a separate “unverified hypothesis” section if the user explicitly asks, never as usable contacts.
-5. **Contact source, ownership, and reachability are separate.** A number published on a clinic page is not automatically the doctor's personal WhatsApp. A public email is not necessarily monitored. A WhatsApp icon or mobile format alone does not prove WhatsApp registration or personal use.
-6. **Preserve source provenance.** Give a direct source URL, source type, relevant evidence, access date, and confidence for every material identity/contact/business claim.
-7. **Respect privacy and outreach rules.** Use professional contact details intentionally published for professional contact. Avoid sensitive personal data, family details, home addresses, personal accounts unrelated to professional work, and patient information. Follow applicable privacy, anti-spam, telemarketing, and professional-contact laws in both sender and recipient jurisdictions. Stop after an explicit refusal or opt-out.
-8. **Do not overstate product need.** A specialty keyword is not evidence of a procedure, equipment ownership, purchasing authority, or purchase intent.
-9. **Do not repeat outreach.** Review current conversation and supplied communication history before drafting. Distinguish already sent, proposed, and received messages.
-10. **No unsupported certainty.** If a source is inaccessible, contradictory, stale, or incomplete, say so.
+4. **Exhaustive means broad and systematic, not intrusive.** Search relevant public sources in local languages and English. Do not bypass logins, paywalls, CAPTCHAs, access controls, robots restrictions, or platform terms; do not obtain leaked, private, or non-public personal data.
+5. **No invented contact details.** Never generate likely email addresses or phone numbers and present them as real. Guessed patterns may be listed only in a separate “unverified hypothesis” section if the user explicitly asks, never as usable contacts.
+6. **Contact source, ownership, and reachability are separate.** A number published on a clinic page is not automatically the doctor's personal WhatsApp. A public email is not necessarily monitored. A WhatsApp icon or mobile format alone does not prove WhatsApp registration or personal use.
+7. **Preserve source provenance.** Give a direct source URL, source type, relevant evidence, access date, and confidence for every material identity/contact/business claim.
+8. **Respect privacy and outreach rules.** Use professional contact details intentionally published for professional contact. Avoid sensitive personal data, family details, home addresses, personal accounts unrelated to professional work, and patient information. Follow applicable privacy, anti-spam, telemarketing, and professional-contact laws in both sender and recipient jurisdictions. Stop after an explicit refusal or opt-out.
+9. **Do not overstate product need.** A specialty keyword is not evidence of a procedure, equipment ownership, purchasing authority, or purchase intent.
+10. **Do not repeat outreach.** Review current conversation and supplied communication history before drafting. Distinguish already sent, proposed, and received messages.
+11. **No unsupported certainty.** If a source is inaccessible, contradictory, stale, or incomplete, say so.
 
 ## 3. Inputs and intake
 
@@ -447,29 +447,29 @@ Before drafting:
 
 ## 13. Required output format
 
-For a single lead, use the following report structure.
+For a single lead, use the following report structure. **The contact register must appear first.** Do not lead with a long identity-verification report or a restatement of the raw input.
 
-### 1. Lead identity
-- Original input and normalized fields
-- Identity conclusion and confidence
-- Current / historical institution distinctions
-- Sources
+### 1. Contact register
 
-### 2. Contact register
-A table with:
-- Contact value
-- Channel / type
-- Person or organization association
-- Source URL
-- Source date / research date
-- Ownership confidence
-- Reachability status
-- Recommended use
+Prioritize the fields in this order:
+1. Customer's full name (preserve original spelling and name order), professional title, and specialty.
+2. Direct professional phone / mobile number.
+3. WhatsApp number, explicitly state whether WhatsApp is confirmed, merely listed, or unknown.
+4. Professional email.
+5. Official clinic / institution phone, WhatsApp, email, website, and contact form.
+6. Other professional profiles or referral channels.
 
-Sort direct professional routes first. Keep unverified or conflicting contacts separate.
+For every route include contact value, channel, person/organization association, direct source URL, research date, ownership confidence, reachability status, and recommended use. Do not hide lower-confidence results; label them. A useful lead can be reported before ownership is fully confirmed. Keep doctor-direct, clinic, department, and third-party routes separate.
+
+### 2. Professional identity and supplied-lead context
+- Briefly state the supplied name/search clues.
+- Identity conclusion and confidence based on newly found evidence.
+- Current / historical institution distinctions.
+- Material conflicts only; do not perform a separate audit of the original lead row.
+- Sources.
 
 ### 3. Search coverage
-A table showing source categories actually searched, findings, limitations, and branches followed. State “not searched” honestly.
+A table showing contact-focused source categories actually searched, findings, limitations, and branches followed. State "not searched" honestly.
 
 ### 4. Clinical and institution analysis
 Separate person-level facts from institution-level facts. Label each clinical claim as documented, self-reported, institution-published, inferred, or unknown.
@@ -481,12 +481,13 @@ Primary and secondary product family, rationale, evidence, contraindications/gap
 Score, grade, evidence confidence, dimension-level rationale, buyer/decision chain, procurement signals, and key missing information.
 
 ### 7. Outreach drafts
-- First WhatsApp identity-check message
-- Institution/assistant variant when needed
-- After-confirmation introduction (clearly marked not for first send)
-- One tailored clinical question
-- First email / institutional routing email
-- Complementary follow-up email when relevant
+- First WhatsApp identity-check message.
+- Institution/assistant variant when needed.
+- After-confirmation introduction (clearly marked not for first send).
+- One tailored clinical question.
+- First email / institutional routing email.
+- Complementary follow-up email when relevant.
+
 Provide Chinese translation for every Spanish/English draft.
 
 ### 8. Next action
