@@ -1,24 +1,25 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "foreign-trade-essential-skills",
-  "version": "1.0.0",
-  "description": "A private medical-device export sales plugin combining exhaustive overseas lead research, contact verification, clinical and institutional qualification, product matching, outreach preparation, and accurate Chinese CRM progress summaries.",
+  "version": "1.1.0",
+  "description": "A medical-device export sales plugin combining exhaustive lead research, contact-first prospect dossiers with structured outreach, and accurate Chinese CRM progress summaries.",
   "author": {"name": "Jef"},
   "homepage": "https://github.com/zwjst/foreign-trade-essential-skills",
   "repository": "https://github.com/zwjst/foreign-trade-essential-skills",
   "license": "MIT",
-  "keywords": ["medical-device-sales","lead-research","contact-verification","crm","overseas-sales","medical-equipment"],
+  "keywords": ["medical-device-sales", "lead-research", "contact-verification", "crm", "overseas-sales", "medical-equipment", "prospect-development"],
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "外贸医疗客户开发工具",
-        "shortDescription": "医疗客户开发与 CRM 总结",
-        "longDescription": "整合两个独立 Skill：海外医疗设备潜在客户公开信息调查、身份与专业联系方式核验、临床及机构采购分析、产品匹配和分阶段外联准备，以及真实客户沟通记录的中文 CRM 摘要。默认采用人工审核，不会自动联系客户。",
+        "shortDescription": "医疗客户开发、结构化报告与 CRM 总结",
+        "longDescription": "整合三个独立 Skill：海外医疗设备潜在客户公开信息调查与联系方式核验；联系方式优先、固定九部分报告结构的医生及机构客户开发，且首次 WhatsApp/邮件话术紧跟联系方式；以及真实客户沟通记录的中文 CRM 摘要。默认采用人工审核，不会自动联系客户。",
         "developerName": "Jef",
         "category": "Productivity",
         "capabilities": [],
         "defaultPrompt": [
-          "请对以下海外医疗设备潜在客户开展全面公开信息调查，先核实身份与联系方式，再分析临床需求、机构采购情况和产品匹配度。采用分阶段人工审核，不要自动联系客户。",
+          "请对以下海外医疗设备潜在客户开展全面公开信息调查，优先检索姓名、个人电话、WhatsApp 和邮箱，然后分析临床需求、机构采购情况和产品匹配度。",
+          "请按医疗器械客户开发固定九部分格式输出：1 联系方式；2 首次开发或跟进话术；3 职业背景；4 学术及临床方向；5 产品匹配；6 机构采购；7 评分；8 下一步；9 CRM 摘要。外语话术必须附中文翻译。",
           "请将以下医疗客户 WhatsApp 或邮件沟通记录整理为一段准确、简洁的中文 CRM 进度摘要。"
         ]
       }
