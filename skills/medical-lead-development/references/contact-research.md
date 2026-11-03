@@ -1,5 +1,9 @@
 # Contact research reference
 
+## Research priority
+
+Treat the supplied lead row as a search seed. Do not spend a preliminary pass proving the original row or auditing every supplied field. Start searching immediately and prioritize: (1) customer's exact name and professional title, (2) direct professional phone/mobile, (3) WhatsApp number and explicit WhatsApp evidence, (4) professional email, then (5) official clinic/institution fallback channels. Report useful public contact findings with their actual confidence even when ownership is not fully confirmed; do not hold back a lead solely because a second source is unavailable. Continue identity/ownership checks only to distinguish the doctor from an institution, assistant, third party, or similarly named person and to avoid misdirected outreach.
+
 ## Contact record schema
 - `value`: exact published phone/email/profile URL
 - `normalized_value`: normalized international phone only when country code is clear
