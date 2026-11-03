@@ -1,7 +1,7 @@
 # Identity verification reference
 
 ## Objective
-Establish whether records refer to the same professional and whether the listed practice is current.
+Use identity research after contact discovery only where needed to determine whether newly found profiles and contact routes belong to the intended professional, distinguish similarly named people, and identify current versus historical practice. The supplied raw lead is a search seed; do not require a preliminary audit or full re-validation of its source row before searching for contact details. Do not delay reporting a useful public contact while seeking perfect identity certainty; state its confidence and caveats.
 
 ## Search matrix
 Search exact full name, name variants, specialty, city, institution, and professional title. Use local language equivalents. For Spanish names, preserve both surnames and test punctuation/diacritic variants without collapsing identities.
