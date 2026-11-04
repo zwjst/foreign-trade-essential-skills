@@ -5,15 +5,15 @@ A combined source repository for three independent Skills supporting overseas me
 ## Included Skills
 
 1. **Medical Lead Development** (`skills/medical-lead-development/`) — exhaustive, evidence-led public-source prospect research, identity and professional contact verification, clinical and institutional qualification, procurement research, product matching, lead scoring, and staged outreach.
-2. **Medical Prospect Development** (`skills/medical-prospect-development/`) — a complete prospect dossier workflow with contact discovery first and a fixed nine-part report. The first-contact WhatsApp/email drafts appear immediately after the contact register, followed by professional background, clinical evidence, Perlove product fit, institutional procurement analysis, scoring, next actions, and a CRM summary.
+2. **Medical Prospect Development** (`skills/medical-prospect-development/`) — a complete prospect dossier workflow with a fixed nine-part report: physician identity and specialty verification; personal WhatsApp, phone, and email discovery; Spanish WhatsApp/email drafts with Chinese translations; current practice institutions and affiliated hospitals; academic papers, procedures, and imaging needs; hospital equipment, procurement history, and decision-makers; Perlove product fit and lead scoring; next actions; and a CRM summary.
 3. **Client Progress Summary** (`skills/client-progress-summary/`) — accurate, concise Chinese CRM progress summaries from actual WhatsApp, email, meeting, and other customer communications.
 
 ## Operating defaults
 
 - **Scope:** medical-device overseas sales.
 - **Research depth:** broad and systematic across relevant public professional sources.
-- **Contact-first:** use the supplied lead as a search seed; prioritize usable professional phone, WhatsApp, and email discovery without a separate preliminary audit of every original field.
-- **Report order:** contact register → first-touch / follow-up drafts → professional background → academic and clinical evidence → product matching → institution and procurement → scoring → next actions → CRM summary.
+- **Identity-first:** verify the physician's identity and specialty before presenting contact findings; then comprehensively search personal professional WhatsApp, phone, and email, clearly separating personal and institutional channels.
+- **Report order:** identity and specialty → personal WhatsApp/phone/email → Spanish WhatsApp and email drafts with Chinese translations → current institutions and affiliated hospitals → academic papers, clinical procedures, and imaging needs → hospital equipment, historical procurement, and purchasing decision-makers → Perlove product fit and lead scoring → next actions → CRM summary.
 - **Execution:** staged human review; show evidence and sources before material next steps.
 - **Privacy:** use professional contact details intentionally made public. Do not collect private personal data, patient data, leaked data, or bypass access controls.
 - **Outreach:** no messages, emails, forms, CRM writes, or purchase commitments are executed without explicit user authorization.
